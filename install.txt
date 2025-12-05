@@ -1,0 +1,31 @@
+🎮 RPG BOT INSTALLATION:
+
+1. Install Termux dari F-Droid
+2. Buka Termux, ketik:
+   pkg update && pkg upgrade
+   pkg install nodejs git -y
+
+3. Buat folder:
+   cd /sdcard
+   mkdir bot-rpg
+   cd bot-rpg
+
+4. Buat file-file di Acode:
+   - package.json
+   - rpg-bot.js
+   - install.txt
+   
+5. Buat folder data di Acode:
+   - data/players.json
+   - data/monsters.json
+
+6. Di Termux, install package:
+   cd /sdcard/bot-rpg
+   npm install
+
+7. Jalankan bot:
+   node rpg-bot.js
+
+8. Scan QR code dengan WhatsApp
+
+9. Kirim: !rpg start
