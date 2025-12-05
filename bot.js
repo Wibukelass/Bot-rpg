@@ -7,7 +7,7 @@ console.log('🚀 Starting Bot...');
 
 const client = new Client({
     puppeteer: {
-        executablePath: '/data/data/com.termux/files/usr/bin/chromium-brower',
+        executablePath: '/data/data/com.termux/files/usr/bin/chromium-browser',
         args: ['--no-sandbox']
     }
 });
