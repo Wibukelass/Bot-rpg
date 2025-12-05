@@ -1,0 +1,14 @@
+{
+  "name": "whatsapp-rpg-bot",
+  "version": "1.0.0",
+  "description": "Bot WhatsApp RPG Adventure Game",
+  "main": "rpg-bot.js",
+  "scripts": {
+    "start": "node rpg-bot.js"
+  },
+  "dependencies": {
+    "whatsapp-web.js": "^1.24.0",
+    "qrcode-terminal": "^0.12.0",
+    "fs": "^0.0.1-security"
+  }
+}
