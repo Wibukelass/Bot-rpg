@@ -1,0 +1,7 @@
+[
+  {"id":1,"name":"Goblin","hp":30,"atk":5,"exp":10,"gold":5},
+  {"id":2,"name":"Slime","hp":20,"atk":3,"exp":7,"gold":3},
+  {"id":3,"name":"Wolf","hp":40,"atk":8,"exp":15,"gold":8},
+  {"id":4,"name":"Orc","hp":60,"atk":12,"exp":25,"gold":15},
+  {"id":5,"name":"Dragon","hp":150,"atk":25,"exp":100,"gold":50}
+]

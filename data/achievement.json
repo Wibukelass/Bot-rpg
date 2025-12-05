@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "First Blood",
+    "desc": "Kill your first monster",
+    "reward": {
+      "gold": 100,
+      "exp": 50
+    }
+  },
+  {
+    "id": 2,
+    "name": "Dragon Slayer",
+    "desc": "Defeat the Dragon boss",
+    "reward": {
+      "gold": 500,
+      "item": "dragon_scale"
+    }
+  }
+]
