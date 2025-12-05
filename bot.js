@@ -1,31 +1,18 @@
-# Buat file bot.js sederhana dulu
-cat > bot.js << 'EOF'
-const { Client } = require('whatsapp-web.js');
+echo "const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
-
-console.log('🚀 Starting Bot...');
-
+console.log('Starting...');
 const client = new Client({
     puppeteer: {
         executablePath: '/data/data/com.termux/files/usr/bin/chromium-browser',
         args: ['--no-sandbox']
     }
 });
-
-client.on('qr', (qr) => {
-    console.log('\n📱 SCAN QR:');
+client.on('qr', qr => {
+    console.log('\\n📱 SCAN QR:');
     qrcode.generate(qr, { small: true });
 });
-
-client.on('ready', () => {
-    console.log('✅ BOT READY!');
+client.on('ready', () => console.log('✅ READY'));
+client.on('message', async msg => {
+    if (msg.body === 'ping') await msg.reply('pong');
 });
-
-client.on('message', async (msg) => {
-    if (msg.body === 'ping') {
-        await msg.reply('pong');
-    }
-});
-
-client.initialize();
-EOF
+client.initialize();" > bot.js
