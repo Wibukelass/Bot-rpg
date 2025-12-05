@@ -3,7 +3,7 @@ const qrcode = require('qrcode-terminal');
 console.log('Starting...');
 const client = new Client({
     puppeteer: {
-        executablePath: '/data/data/com.termux/files/usr/bin/chromium-browser',
+        executablePath: '/data/data/com.termux/files/usr/bin/chromium',
         args: ['--no-sandbox']
     }
 });
